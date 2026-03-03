@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.0">
+  <diagram id="bookroom-state" name="StateDiagram">
+    <mxGraphModel dx="2788" dy="1602" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S0&#xa;KHỞI_TẠO" vertex="1">
+          <mxGeometry height="70" width="150" x="-120" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="S1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S1&#xa;CHỜ_THANH_TOÁN" vertex="1">
+          <mxGeometry height="70" width="170" x="60" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="S2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S2&#xa;ĐÃ_THANH_TOÁN" vertex="1">
+          <mxGeometry height="70" width="170" x="510" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="S3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S3&#xa;ĐÃ_XÁC_NHẬN" vertex="1">
+          <mxGeometry height="70" width="170" x="900" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="S4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S4&#xa;ĐANG_LƯU_TRÚ" vertex="1">
+          <mxGeometry height="70" width="170" x="900" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="S5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S5&#xa;HOÀN_THÀNH" vertex="1">
+          <mxGeometry height="70" width="170" x="900" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="S6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S6&#xa;ĐÃ_HUỶ" vertex="1">
+          <mxGeometry height="70" width="170" x="190" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="S7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S7&#xa;CHỜ_HOÀN_TIỀN" vertex="1">
+          <mxGeometry height="70" width="190" x="530" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="S8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S8&#xa;ĐÃ_HOÀN_TIỀN" vertex="1">
+          <mxGeometry height="70" width="190" x="330" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="S9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;strokeWidth=1;" value="S9&#xa;HẾT_HẠN" vertex="1">
+          <mxGeometry height="70" width="170" x="-230" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="T01" edge="1" parent="1" source="S0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S1" value="T01: Xác nhận đặt phòng">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T02" edge="1" parent="1" source="S1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S2" value="T02: Thanh toán online thành công">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T05" edge="1" parent="1" source="S2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S3" value="T05: Khách sạn xác nhận">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T07" edge="1" parent="1" source="S3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S4" value="T07: Check-in">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T10" edge="1" parent="1" source="S4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S5" value="T10: Check-out">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T03" edge="1" parent="1" source="S1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S9" value="T03: Timeout 30 phút">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T04" edge="1" parent="1" source="S1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S6" value="T04: Khách huỷ trước thanh toán">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T06" edge="1" parent="1" source="S2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S6" value="T06: KS từ chối (hết phòng)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T08" edge="1" parent="1" source="S3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S6" value="T08: Huỷ trước ngày check-in (miễn phí)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-WfhftVBeUJKl0_fkDeT-1" connectable="0" parent="T08" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Text" vertex="1">
+          <mxGeometry relative="1" x="0.4521" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T09" edge="1" parent="1" source="S3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S7" value="T09: Huỷ sau thời hạn (hoàn 1 phần)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T11" edge="1" parent="1" source="S6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S7" value="T11: Yêu cầu hoàn tiền (nếu đã thanh toán)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T12" edge="1" parent="1" source="S7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="S8" value="T12: Hoàn tiền thành công">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
